@@ -1,0 +1,20 @@
+name: GitHub Actions Demo
+on: [push] # Memicu workflow setiap ada push kode
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Menggunakan runner Ubuntu dari GitHub
+    steps:
+      - name: Ambil kode dari repo
+        uses: actions/checkout@v4 # Mengklon repo ke runner
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependensi
+        run: npm install
+
+      - name: Jalankan tes
+        run: npm test
