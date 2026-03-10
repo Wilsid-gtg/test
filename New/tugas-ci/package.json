@@ -1,0 +1,23 @@
+{
+  "name": "tugas-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Building project...'", 
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "jest": "^30.3.0"
+  }
+}
